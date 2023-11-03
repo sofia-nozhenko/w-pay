@@ -1,0 +1,208 @@
+$c1: #000000;
+$c2: #fff;
+$c3: #f8d303;
+
+header,
+body,
+footer {
+    font-family: "Comfortaa", sans-serif;
+    background-color: $c3;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1110px;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.offer-btn {
+    font-size: 20px;
+    font-weight: 400;
+    color: $c2;
+    background-color: $c1;
+    display: flex;
+    border: 1px solid $c1;
+    width: 374px;
+    padding: 10px 0;
+    justify-content: center;
+    border-radius: 40px;
+    transition: all 1s ease;
+    margin: 19px 0;
+}
+
+.offer-text {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+// Header here
+header {
+    padding-top: 100px;
+    .logo {
+        img {
+            width: 100%;
+        }
+    }
+    .nav-menu {
+        justify-content: space-between;
+        a {
+            color: $c1;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid $c3;
+            transition: all 1s ease-out;
+        }
+        a:hover {
+            border-bottom: 2px solid $c1;
+        }
+    }
+    .nav-form {
+        button {
+            border: none;
+            background-color: $c2;
+            font-size: 14px;
+            color: $c1;
+            text-transform: uppercase;
+            padding: 10px 0;
+            padding-left: 20px;
+            width: 310px;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+}
+
+form {
+    margin-top: 40px;
+    border-radius: 60px;
+    border: 4px solid #7e6c02;
+    padding: 35px;
+    width: 377px;
+    background-color: $c2;
+    .form-item {
+        column-gap: 10px;
+        padding-bottom: 20px;
+        label {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            width: fit-content;
+        }
+        input {
+            border: none;
+            border-bottom: 1px solid $c1;
+            width: 240px;
+        }
+        input:focus,
+        textarea:focus,
+        select:focus,
+        a:focus {
+            outline: none;
+        }
+    }
+    .form-item:last-child {
+        padding-bottom: 0;
+    }
+}
+
+.text-wrapp {
+    font-size: 12px;
+    font-weight: 400;
+    max-width: 432px;
+}
+
+// Information section
+
+.information {
+    margin-top: 87px;
+}
+
+.photo-wrapp {
+    column-gap: 40px;
+    .img-wrapp {
+        position: relative;
+    }
+    .img-wrapp:first-child {
+        margin-top: 275px;
+    }
+    .img-wrapp:first-child:before {
+        content: url("./../img/rectangle-top.png");
+        position: absolute;
+        width: 143px;
+        height: 67px;
+        left: 70px;
+        top: -95px;
+    }
+    .img-wrapp:first-child::after {
+        content: url("./../img/rectangle-left.png");
+        position: absolute;
+        width: 100px;
+        height: 166px;
+        left: -120px;
+        top: 38px;
+    }
+    .img-wrapp:last-child::after {
+        content: url("./../img/rectangle-right.png");
+        position: absolute;
+        width: 282px;
+        height: 90px;
+        left: 164px;
+        top: -47px;
+    }
+    .img-wrapp:last-child::before {
+        content: url("./../img/rectangle-bottom.png");
+        position: absolute;
+        width: 57px;
+        height: 122px;
+        left: 300px;
+        top: 0;
+    }
+}
+
+// Main section
+
+.main {
+    margin-top: 380px;
+}
+
+.main {
+    position: relative;
+    .photo-wrapp {
+        img {
+            width: 100%;
+        }
+    }
+    .main-text-wrapp p:first-child {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.main::before {
+    content: url("./../img/rectangle-right.png");
+    position: absolute;
+    width: 282px;
+    height: 92px;
+    right: 17%;
+    top: -175px;
+}
+
+.main::after {
+    content: url("./../img/section-bg.png");
+    position: absolute;
+    width: 423px;
+    height: 951px;
+    right: 0;
+    top: -890px;
+}
+
